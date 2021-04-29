@@ -30,7 +30,7 @@ public enum Cell {
         for (Cell cell : Cell.values()) {
             if (cell.symbol.equals(symbol)) {
                 cellRepresentedBySymbol = cell;
-                break;
+                break; // break the for cycle here since the cell has been found
             }
         }
         return cellRepresentedBySymbol;
